@@ -40,7 +40,7 @@ class SiteController extends Controller
 	    if($error=Yii::app()->errorHandler->error)
 	    {
 	    	if(Yii::app()->request->isAjaxRequest)
-	    		echo $error['message'];
+	    		echo $error['Site has encountered an error'];
 	    	else
 	        	$this->render('error', $error);
 	    }
@@ -99,5 +99,28 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+	
+	
+	public function actionPortfolio()	{
+		$this->render('portfolio');
+	}
+	
+	public function actionPaintings()	{
+		$this->render('paintings');
+	}
+	
+	public function actionWebsites()	{
+		$this->render('websites');
+	}
+	
+	public function actionLogos()	{
+		$this->render('logos');
+	}
+	public function actionSkills()	{
+		$this->render('skills');
+	}
+	public function actionResume()	{
+		$this->render('resume');
 	}
 }

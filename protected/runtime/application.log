@@ -1,0 +1,368 @@
+2013/05/29 03:13:43 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.responsiveCss" is not defined.' in C:\wamp\yiiroot\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\yiiroot\framework\YiiBase.php(222): CComponent->__set('responsiveCss', true)
+#1 C:\wamp\yiiroot\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 C:\wamp\yiiroot\framework\base\CModule.php(104): CModule->getComponent('bootstrap')
+#3 C:\wamp\www\KD3\themes\bootstrap\views\layouts\main.php(12): CModule->__get('bootstrap')
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require('C:\wamp\www\KD3...')
+#5 C:\wamp\yiiroot\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\KD3...', Array, true)
+#6 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\KD3...', Array, true)
+#7 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\wamp\yiiroot\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\wamp\yiiroot\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#12 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require('C:\wamp\www\KD3...')
+#13 C:\wamp\yiiroot\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\KD3...', Array, true)
+#14 C:\wamp\yiiroot\framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\KD3...', Array, true)
+#15 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yiiroot\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yiiroot\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('')
+#21 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#22 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/kd3/
+---
+2013/05/29 03:16:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/
+---
+2013/05/29 03:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "skills".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('skills')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('skills')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/skills')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/skills
+HTTP_REFERER=http://localhost/kd3/index.php/site/portfolio
+---
+2013/05/29 03:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "skills".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('skills')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('skills')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/skills')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/skills
+HTTP_REFERER=http://localhost/kd3/index.php/site/portfolio
+---
+2013/05/29 03:16:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 03:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "skills".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('skills')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('skills')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/skills')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/skills
+HTTP_REFERER=http://localhost/kd3/index.php/site/portfolio
+---
+2013/05/29 03:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "resume".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('resume')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('resume')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/resume')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/resume
+HTTP_REFERER=http://localhost/kd3/index.php/site/skills
+---
+2013/05/29 03:28:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "resume".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('resume')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('resume')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/resume')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/resume
+HTTP_REFERER=http://localhost/kd3/index.php/site/skills
+---
+2013/05/29 03:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "resume".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('resume')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('resume')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/resume')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/resume
+HTTP_REFERER=http://localhost/kd3/index.php/site/skills
+---
+2013/05/29 03:31:07 [error] [php] Trying to get property of non-object (C:\wamp\www\KD3\protected\views\layouts\main.php:8)
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\yiiroot\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): SiteController->endContent()
+#6 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\yiiroot\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\yiiroot\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\yiiroot\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\yiiroot\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): SiteController->run()
+#15 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\KD3\index.php(14): CWebApplication->run()
+REQUEST_URI=/kd3/index.php
+in C:\wamp\www\KD3\protected\views\layouts\main.php (8)
+in C:\wamp\www\KD3\protected\views\layouts\column1.php (5)
+in C:\wamp\www\KD3\protected\controllers\SiteController.php (32)
+2013/05/29 03:31:38 [error] [php] Trying to get property of non-object (C:\wamp\www\KD3\protected\views\layouts\main.php:8)
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\yiiroot\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): SiteController->endContent()
+#6 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\yiiroot\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\yiiroot\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\yiiroot\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\yiiroot\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): SiteController->run()
+#15 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\KD3\index.php(14): CWebApplication->run()
+REQUEST_URI=/kd3/index.php
+in C:\wamp\www\KD3\protected\views\layouts\main.php (8)
+in C:\wamp\www\KD3\protected\views\layouts\column1.php (5)
+in C:\wamp\www\KD3\protected\controllers\SiteController.php (32)
+2013/05/29 03:31:42 [error] [php] Trying to get property of non-object (C:\wamp\www\KD3\protected\views\layouts\main.php:8)
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\yiiroot\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): SiteController->endContent()
+#6 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\yiiroot\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\yiiroot\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\yiiroot\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\yiiroot\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): SiteController->run()
+#15 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\KD3\index.php(14): CWebApplication->run()
+REQUEST_URI=/kd3/index.php
+in C:\wamp\www\KD3\protected\views\layouts\main.php (8)
+in C:\wamp\www\KD3\protected\views\layouts\column1.php (5)
+in C:\wamp\www\KD3\protected\controllers\SiteController.php (32)
+2013/05/29 03:31:43 [error] [php] Trying to get property of non-object (C:\wamp\www\KD3\protected\views\layouts\main.php:8)
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\yiiroot\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): SiteController->endContent()
+#6 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\yiiroot\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\yiiroot\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\yiiroot\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\yiiroot\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): SiteController->run()
+#15 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\KD3\index.php(14): CWebApplication->run()
+REQUEST_URI=/kd3/index.php
+in C:\wamp\www\KD3\protected\views\layouts\main.php (8)
+in C:\wamp\www\KD3\protected\views\layouts\column1.php (5)
+in C:\wamp\www\KD3\protected\controllers\SiteController.php (32)
+2013/05/29 03:31:43 [error] [php] Trying to get property of non-object (C:\wamp\www\KD3\protected\views\layouts\main.php:8)
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\yiiroot\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): SiteController->endContent()
+#6 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\yiiroot\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\yiiroot\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\yiiroot\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\yiiroot\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): SiteController->run()
+#15 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\KD3\index.php(14): CWebApplication->run()
+REQUEST_URI=/kd3/index.php
+in C:\wamp\www\KD3\protected\views\layouts\main.php (8)
+in C:\wamp\www\KD3\protected\views\layouts\column1.php (5)
+in C:\wamp\www\KD3\protected\controllers\SiteController.php (32)
+2013/05/29 03:31:43 [error] [php] Trying to get property of non-object (C:\wamp\www\KD3\protected\views\layouts\main.php:8)
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\yiiroot\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): SiteController->endContent()
+#6 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\yiiroot\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\yiiroot\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\yiiroot\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\yiiroot\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): SiteController->run()
+#15 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\KD3\index.php(14): CWebApplication->run()
+REQUEST_URI=/kd3/index.php
+in C:\wamp\www\KD3\protected\views\layouts\main.php (8)
+in C:\wamp\www\KD3\protected\views\layouts\column1.php (5)
+in C:\wamp\www\KD3\protected\controllers\SiteController.php (32)
+2013/05/29 03:34:07 [error] [exception.CException] exception 'CException' with message 'Property "Bootstrap.coreCss" is not defined.' in C:\wamp\yiiroot\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\yiiroot\framework\YiiBase.php(222): CComponent->__set('coreCss', false)
+#1 C:\wamp\yiiroot\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 C:\wamp\yiiroot\framework\base\CModule.php(104): CModule->getComponent('bootstrap')
+#3 C:\wamp\www\KD3\protected\views\layouts\main.php(13): CModule->__get('bootstrap')
+#4 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require('C:\wamp\www\KD3...')
+#5 C:\wamp\yiiroot\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\KD3...', Array, true)
+#6 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\KD3...', Array, true)
+#7 C:\wamp\yiiroot\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#8 C:\wamp\yiiroot\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#9 C:\wamp\yiiroot\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\wamp\yiiroot\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\wamp\www\KD3\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#12 C:\wamp\yiiroot\framework\web\CBaseController.php(127): require('C:\wamp\www\KD3...')
+#13 C:\wamp\yiiroot\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\KD3...', Array, true)
+#14 C:\wamp\yiiroot\framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\KD3...', Array, true)
+#15 C:\wamp\www\KD3\protected\controllers\SiteController.php(32): CController->render('index')
+#16 C:\wamp\yiiroot\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\wamp\yiiroot\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\yiiroot\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\yiiroot\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('')
+#21 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#22 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/kd3/index.php
+HTTP_REFERER=http://localhost/kd3/index.php/site/resume
+---
+2013/05/29 04:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 04:10:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 04:12:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 04:13:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 04:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 04:16:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---
+2013/05/29 04:16:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "portfolio".' in C:\wamp\yiiroot\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\yiiroot\framework\web\CController.php(271): CController->missingAction('portfolio')
+#1 C:\wamp\yiiroot\framework\web\CWebApplication.php(276): CController->run('portfolio')
+#2 C:\wamp\yiiroot\framework\web\CWebApplication.php(135): CWebApplication->runController('site/portfolio')
+#3 C:\wamp\yiiroot\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\KD3\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/kd3/index.php/site/portfolio
+HTTP_REFERER=http://localhost/kd3/index.php
+---

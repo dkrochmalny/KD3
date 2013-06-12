@@ -8,13 +8,14 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Daniel Krochmalny',
-	'theme'=>'bootstrap',
+	//'theme'=>'bootstrap',
 	// preloading 'log' component
 	'preload'=>array('log'),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.*'
 	),
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
@@ -39,28 +40,30 @@ return array(
 				),
 			),
 		),
-		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-		),
-		'bootstrap'=>array(
-            'class'=>'bootstrap.components.Bootstrap',
-        ),
-		'less'=>array(
+	    'less'=>array(
 			'class'=>'ext.less.components.Less',
 			'mode'=>'client',
 			'files'=>array(
 				'less/styles.less'=>'css/styles.css',
 			),
 		),
+		'user'=>array(
+			// enable cookie-based authentication
+			'allowAutoLogin'=>true,
+		),
+		'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+			// 'responsiveCss'=>true,			
+        ),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-			'rules'=>array(			
+			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>', // this is the rule you absolutely need for update to work
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+			'showScriptName'=>false,
 		),
 		// 'db'=>array(
 			// 'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
@@ -79,24 +82,24 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-		'log'=>array(
-			'class'=>'CLogRouter',
-			'routes'=>array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),
-				array(
-					'class' => 'application.extensions.pqp.PQPLogRoute',
-                    'categories' => 'application.*, exception.*',
-				),
-				array(
-					'class'=>'ext.db_profiler.DbProfileLogRoute',
-                    'countLimit' => 1, // How many times the same query should be executed to be considered inefficient
-                    'slowQueryMin' => 0.01, // Minimum time for the query to be slow
-                ),
-			),
-		),
+		// 'log'=>array(
+			// 'class'=>'CLogRouter',
+			// 'routes'=>array(
+				// array(
+					// 'class'=>'CFileLogRoute',
+					// 'levels'=>'error, warning',
+				// ),
+				// array(
+					// 'class' => 'application.extensions.pqp.PQPLogRoute',
+                    // 'categories' => 'application.*, exception.*',
+				// ),
+				// array(
+					// 'class'=>'ext.db_profiler.DbProfileLogRoute',
+                    // 'countLimit' => 1, // How many times the same query should be executed to be considered inefficient
+                    // 'slowQueryMin' => 0.01, // Minimum time for the query to be slow
+                // ),
+			// ),
+		// ),
 	),
 
 	// application-level parameters that can be accessed
@@ -104,5 +107,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'lessActive'=>true,
 	),
 );
